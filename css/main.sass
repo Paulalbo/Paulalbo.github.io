@@ -14,10 +14,12 @@ section
     min-height: 100vh
     display: flex
     justify-content: center
-    align-items: flex-start
+    align-items: center
+    flex-direction: column
     p
         font-size: 150px
     &:first-of-type
+        justify-content: flex-start
         p
             position: fixed
             z-index: -3
@@ -28,6 +30,6 @@ section
             color: white
             font-size: 150px
 
-
-.spline-watermark
-    display: none!important
+    img
+        width: 100%
+        max-width: 500px
