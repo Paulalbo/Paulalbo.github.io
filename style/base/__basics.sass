@@ -28,14 +28,20 @@ body
 
 
 .heading-container
-  padding: 25px 50px
+  padding: 25px 20px
   background-color: #fff
   box-shadow: inset 24px 24px 40px -22px rgba(0,0,0,0.84)
+  @media screen and (min-width: $medium) 
+    padding: 25px 50px
   .headline 
-    font-size: 50px
+    font-size: 30px
+    @media screen and (min-width: $medium) 
+      font-size: 50px
   &--floating
     background-color: #101010
     box-shadow: 17px 17px 22px -5px rgba(0,0,0,0.56)
+    margin: 0 25px
+
     .headline--2
       color: #fff
     

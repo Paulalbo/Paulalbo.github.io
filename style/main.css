@@ -42,20 +42,33 @@ body {
 }
 
 .heading-container {
-  padding: 25px 50px;
+  padding: 25px 20px;
   background-color: #fff;
   -webkit-box-shadow: inset 24px 24px 40px -22px rgba(0, 0, 0, 0.84);
           box-shadow: inset 24px 24px 40px -22px rgba(0, 0, 0, 0.84);
 }
 
+@media screen and (min-width: 900px) {
+  .heading-container {
+    padding: 25px 50px;
+  }
+}
+
 .heading-container .headline {
-  font-size: 50px;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 900px) {
+  .heading-container .headline {
+    font-size: 50px;
+  }
 }
 
 .heading-container--floating {
   background-color: #101010;
   -webkit-box-shadow: 17px 17px 22px -5px rgba(0, 0, 0, 0.56);
           box-shadow: 17px 17px 22px -5px rgba(0, 0, 0, 0.56);
+  margin: 0 25px;
 }
 
 .heading-container--floating .headline--2 {
@@ -267,11 +280,18 @@ body {
 
 .section-hero .heading-container {
   overflow: hidden;
-  height: 90px;
+  height: 50px;
+}
+
+@media screen and (min-width: 900px) {
+  .section-hero .heading-container {
+    height: 90px;
+  }
 }
 
 .section-hero .heading-container .headline {
   color: #000;
+  min-height: 95px;
 }
 
 .section-hero .headline {
@@ -282,7 +302,6 @@ body {
 }
 
 .section-hero .headline--2 {
-  font-size: 30px;
   height: 90px;
   padding: 0 50px 25px;
   letter-spacing: 0;
@@ -295,6 +314,7 @@ body {
   text-align: center;
   height: 100%;
   line-height: 1;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 900px) {
@@ -321,10 +341,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 2250px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 3000px;
   position: relative;
 }
 
@@ -357,7 +377,7 @@ body {
 
 .section-about__box {
   width: 250px;
-  height: 250px;
+  height: 500px;
   margin: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +448,7 @@ body {
   background: #fff;
   -webkit-box-shadow: inset 24px 58px 40px -53px rgba(0, 0, 0, 0.84);
           box-shadow: inset 24px 58px 40px -53px rgba(0, 0, 0, 0.84);
+  padding-top: 50px;
 }
 
 .section-work__projects {
@@ -437,10 +458,16 @@ body {
 }
 
 .section-work__projects .headline {
-  font-size: 30px;
   padding: 10vh 10vw;
   text-transform: uppercase;
   text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .section-work__projects .headline {
+    font-size: 30px;
+  }
 }
 
 .section-contact {
@@ -448,10 +475,10 @@ body {
 }
 
 .section-contact__form {
-  height: 50vh;
-  width: 50vw;
-  margin: 10vh 10vw;
-  padding: 5vh 5vw;
+  height: 60%;
+  width: 80%;
+  margin: 10px;
+  padding: 5px;
   background-color: #101010;
   -webkit-box-shadow: 17px 17px 22px -5px rgba(0, 0, 0, 0.56);
           box-shadow: 17px 17px 22px -5px rgba(0, 0, 0, 0.56);
@@ -461,24 +488,43 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+@media screen and (min-width: 900px) {
+  .section-contact__form {
+    height: 50vh;
+    width: 50vw;
+    margin: 10vh 10vw;
+    padding: 5vh 5vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .section-contact__form input, .section-contact__form textarea {
   background-color: #fff;
   -webkit-box-shadow: inset 32px 27px 30px -24px rgba(0, 0, 0, 0.84);
           box-shadow: inset 32px 27px 30px -24px rgba(0, 0, 0, 0.84);
-  margin: 0 0 50px 0;
-  width: 100%;
+  margin: 0 0 20px 0;
+  width: 80%;
   height: 50px;
   padding-left: 20px;
   border: unset;
+}
+
+@media screen and (min-width: 900px) {
+  .section-contact__form input, .section-contact__form textarea {
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
 }
 
 .section-contact__form textarea {
@@ -490,7 +536,13 @@ body {
   margin: 0;
   text-transform: uppercase;
   padding: 10px 5px;
-  font-size: 20px;
   font-weight: 800;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .section-contact__form label {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
