@@ -1,0 +1,14 @@
+{
+    "navigation": {
+        "home": "Home",
+        "work": "Examples",
+        "about": "about",
+        "contact": "Contact"
+    },
+    "content": {
+        "test": "content init"
+    },
+    "footer": {
+        "test": "footer init"
+    }
+}

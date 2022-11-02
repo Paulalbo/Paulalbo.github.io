@@ -1,0 +1,40 @@
+*
+    margin: 0
+    padding: 0
+    font-family: $base-font
+    caret-color: #757575
+
+body 
+  //background: rgb(0,0,0)
+  //background: linear-gradient(79deg, rgba(0,0,0,1) 51%, rgba(117,117,117,1) 100%)
+  overflow-x: hidden
+  position: relative
+
+.main
+  background: #1c1c1c
+  //background: linear-gradient(148deg, #1c1c1c 0%, #1c1c1c 24%, #1c1c1c 60%)
+  width: 100vw
+  right: 0
+  z-index: 10
+  position: absolute
+  transition: .5s ease-in-out
+  box-shadow: 1px -100px 40px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16,16,16,0.4), 1px 22px 10px rgba(16,16,16,0.2), 1px 25px 35px rgba(16,16,16,0.2), 1px 30px 60px rgba(16,16,16,0.4)
+  &--active-menu
+    right: -250px
+  &--edit-active
+    .headline
+      opacity: 0.8
+
+
+.heading-container
+  padding: 25px 50px
+  background-color: #fff
+  box-shadow: inset 24px 24px 40px -22px rgba(0,0,0,0.84)
+  .headline 
+    font-size: 50px
+  &--floating
+    background-color: #101010
+    box-shadow: 17px 17px 22px -5px rgba(0,0,0,0.56)
+    .headline--2
+      color: #fff
+    

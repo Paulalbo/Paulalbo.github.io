@@ -1,0 +1,49 @@
+.navigation
+    background: #ffffff
+    position: fixed
+    top: 0
+    left: 0
+    height: 100vh
+    width: 100%
+    &__container
+        display: flex
+        justify-content: center
+        align-content: center
+        list-style-type: none
+        flex-direction: column
+        margin: 15px
+        padding: 0
+        height: 100%
+        width: 200px
+    &__item
+        margin: 25px 0
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        color: $color-white
+        color: #000
+
+.button
+    position: fixed
+    top: 0
+    z-index: 15
+    background-color: black
+    padding: 15px 20px
+    margin: 20px
+    border-radius: 50px
+    border: 1px solid #fff
+    color: #fff
+    &:hover
+        cursor: pointer
+    &--edit
+        position: fixed
+        right: 0
+        top: 0
+        user-select: none
+        cursor: pointer
+        &-acitve 
+            opacity: 0.5
+    &--menutoggle 
+        right: 90px
