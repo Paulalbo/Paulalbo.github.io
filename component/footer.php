@@ -1,1 +1,0 @@
-<h1><?php echo $array["footer"]["test"] ?></h1>
