@@ -16,7 +16,7 @@
 }
 
 body {
-  overflow-y: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -281,7 +281,7 @@ body {
 }
 
 .section-hero .headline--2 {
-  font-size: 100px;
+  font-size: 30px;
   height: 90px;
   padding: 0 50px 25px;
   letter-spacing: 0;
@@ -294,6 +294,12 @@ body {
   text-align: center;
   height: 100%;
   line-height: 1;
+}
+
+@media screen and (min-width: 900px) {
+  .section-hero .headline--2 {
+    font-size: 100px;
+  }
 }
 
 .section-hero .headline--2 span {
@@ -317,8 +323,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 4500px;
+  width: 2500px;
   position: relative;
+}
+
+@media screen and (min-width: 900px) {
+  .section-about {
+    width: 4500px;
+  }
 }
 
 .section-about__headline {
@@ -343,8 +355,8 @@ body {
 }
 
 .section-about__box {
-  width: 500px;
-  height: 500px;
+  width: 250px;
+  height: 250px;
   margin: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,6 +373,13 @@ body {
           flex-direction: column;
   -webkit-box-shadow: inset 24px 24px 40px -22px rgba(0, 0, 0, 0.84);
           box-shadow: inset 24px 24px 40px -22px rgba(0, 0, 0, 0.84);
+}
+
+@media screen and (min-width: 900px) {
+  .section-about__box {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 .section-about__box--hak {
