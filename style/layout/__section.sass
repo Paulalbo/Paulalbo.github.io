@@ -4,7 +4,7 @@
     height: 50vh
 
     
-@keyframes scroll
+@keyframes scroll-desktop
     0%
         transform: translateY(0px)
     3%
@@ -23,6 +23,26 @@
 	    transform: translateY(calc(-120px * 4))
     100%
 	    transform: translateY(calc(-120px * 4))
+
+@keyframes scroll-mobil
+    0%
+        transform: translateY(0px)
+    3%
+	    transform: translateY(calc(-90px))
+    25%
+	    transform: translateY(calc(-90px))
+    28%
+	    transform: translateY(calc(-90px * 2))
+    50%
+	    transform: translateY(calc(-90px * 2))
+    53%
+	    transform: translateY(calc(-90px * 3))
+    75%
+	    transform: translateY(calc(-90px * 3))
+    78%
+	    transform: translateY(calc(-90px * 4))
+    100%
+	    transform: translateY(calc(-90px * 4))
 
 
 
@@ -65,7 +85,7 @@
             .headline 
                 color: $color-white
                 font-weight: $weight-light
-                min-height: 120px
+                min-height: 90px
             p
                 color: $color-white
                 top: 50%
@@ -80,8 +100,10 @@
 
             
         .headline
-            animation: scroll 15s linear infinite
+            animation: scroll-mobil 15s linear infinite
             animation-delay: 2s
+            @media screen and (min-width: $medium) 
+                animation: scroll-desktop 15s linear infinite
             &--2
                 margin-left: 50px
                 padding: 20px 25px
