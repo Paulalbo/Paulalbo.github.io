@@ -8,21 +8,21 @@
     0%
         transform: translateY(0px)
     3%
-	    transform: translateY(calc(-117px))
+	    transform: translateY(calc(-120px))
     25%
-	    transform: translateY(calc(-117px))
+	    transform: translateY(calc(-120px))
     28%
-	    transform: translateY(calc(-117px * 2))
+	    transform: translateY(calc(-120px * 2))
     50%
-	    transform: translateY(calc(-117px * 2))
+	    transform: translateY(calc(-120px * 2))
     53%
-	    transform: translateY(calc(-117px * 3))
+	    transform: translateY(calc(-120px * 3))
     75%
-	    transform: translateY(calc(-117px * 3))
+	    transform: translateY(calc(-120px * 3))
     78%
-	    transform: translateY(calc(-117px * 4))
+	    transform: translateY(calc(-120px * 4))
     100%
-	    transform: translateY(calc(-117px * 4))
+	    transform: translateY(calc(-120px * 4))
 
 
 
@@ -37,36 +37,66 @@
         align-items: center
         position: relative
         color: white
-        .heading-container
+        .hero-container
             overflow: hidden
-            height: 50px
+            height: 250px
+            position: relative
+            width: 100%
+            padding-left: 10vw
+            padding-top: 61px
             @media screen and (min-width: $medium) 
-                height: 90px
+                padding-top: 114px
+                height: 350px
+            &::before, &::after
+                content: ''
+                position: absolute
+                width: 100%
+                height: 40%
+                z-index: 5
+            &::before
+                top: 0
+                background: linear-gradient(180deg, rgba(29,32,39,1) 0%, rgba(29,32,39,0) 100%)
+
+            &::after
+                bottom: 0
+                background: linear-gradient(180deg, rgba(29,32,39,0) 0%, rgba(29,32,39,1) 100%)
+
+                
             .headline 
-                color: #000
-                min-height: 95px
+                color: $color-white
+                font-weight: $weight-light
+            p
+                color: $color-white
+                top: 50%
+                text-transform: uppercase
+                transform: translate(0, -50%)
+                position: absolute
+                font-size: 20px
+                font-weight: $weight-light
+                width: 100%
+                @media screen and (min-width: $medium) 
+                    font-size: 70px
+
             
         .headline
             animation: scroll 15s linear infinite
             animation-delay: 2s
             &--2
-                height: 90px
-                padding: 0 50px 25px
+                margin-left: 200px
+                padding: 20px 25px
                 letter-spacing: 0
                 user-select: none
-                font-weight: 900
+                font-weight: $weight-bold
                 text-transform: uppercase
-                text-align: center
-                height: 100%
-                line-height: 1
+                text-align: left
                 font-size: 20px
 
                 @media screen and (min-width: $medium) 
-                    font-size: 100px
+                    font-size: 70px
                 
 
                 span
-                    font-weight: 200
+                    font-weight: $weight-light
 
     &--fixed 
         position: fixed
@@ -78,10 +108,11 @@
         display: flex
         justify-content: center
         align-items: flex-start
-        width: 3000px
+        width: 1500px
         position: relative
         @media screen and (min-width: $medium) 
             width: 4500px
+            align-items: center
         
         &__headline
             position: absolute
@@ -89,117 +120,85 @@
             top: 10vh
             font-size: 10vw
             text-align: center
-            color: #ffffff00
-            background-color: #565656;
-            text-shadow: 4px 3px 1px #ffffff, 5px 2px 1px #ffffff
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
+            color: $color-white
 
         &__container 
             display: flex
             flex-wrap: nowrap
+        &__logo
+            width: 100%
+            height: 25%
+            opacity: 0.9
+            padding: 20px
+            background-color: $color-white
+            border-radius: 25px 25px 0 0
+            margin-bottom: 50px
+            img
+                width: 100%
+                height: 100%
+                object-fit: contain
+            
         &__box
             width: 250px
             height: 500px
-            margin: 25px
+            margin: 50px
             display: flex
-            justify-content: center
+            justify-content: flex-start
             align-items: center
             flex-direction: column
-            box-shadow: inset 24px 24px 40px -22px rgba(0,0,0,0.84);
+            background-color: $color-primary-light
+            border-radius: 30px
+            box-shadow: 25px 20px 81px -18px rgb(0, 0, 0)
+            & + &
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 50px
+                    height: 5px
+                    left: -75px
+                    border-radius: 50px
+                    background-color: $color-primary-light
+                    top: 50%
+                    transform: translate(0, -50%)
+
             @media screen and (min-width: $medium) 
                 width: 500px
                 height: 500px
 
-
-            &--hak
-                background: url(../assets/img/logo/hak.png), #ffffff
-                background-repeat: no-repeat
-                background-position: center 40px;
-                background-size: 80%;
-            &--zivildienst
-                background: url(../assets/img/logo/volkshilfe_noe.jpg), #ffffff
-                background-repeat: no-repeat
-                background-position: center 40px;
-                background-size: 80%;
-            &--laola1
-                background: url(../assets/img/logo/laola1.png), #ffffff
-                background-repeat: no-repeat
-                background-position: center 40px;
-                background-size: 80%;
-            &--nexxar
-                background: url(../assets/img/logo/nexxar.png), #ffffff
-                background-repeat: no-repeat
-                background-position: center 40px;
-                background-size: 80%;
-            &--codefactory
-                background: url(../assets/img/logo/codefactory.png), #ffffff
-                background-repeat: no-repeat
-                background-position: center 40px;
-                background-size: 80%;
-
             .headline 
                 text-transform: uppercase
                 margin: 10px 0 5px
-                color: #000
+                color: $color-white
+                &--3
+                    font-weight: $weight-bold
+
     &-work 
-        background: #fff
-        box-shadow: inset 24px 58px 40px -53px rgba(0,0,0,0.84);
+        background: $color-primary-light
+        box-shadow: inset 24px 58px 40px -53px rgba(0,0,0,0.84)
         padding-top: 50px
+        height: 100%
+        &__tech 
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 100px
         &__projects 
             margin: 10vh 10vw
-            background: #fff
+            background: $color-primary
             max-width: 100vw
+            border: 1px solid $color-black
+            border-radius: 25px
             .headline
                 padding: 10vh 10vw
                 text-transform: uppercase
                 text-align: center
                 font-size: 15px
+                color: $color-white
                 @media screen and (min-width: $medium) 
                     font-size: 30px
     &-contact 
-        background: #fff
-        &__form 
-            height: 60%
-            width: 80%
-            margin: 10px
-            padding:  5px
-            background-color: #101010
-            box-shadow: 17px 17px 22px -5px rgba(0,0,0,0.56)
-            display: flex
-            justify-content: center
-            align-items: center
-            flex-direction: column
-            @media screen and (min-width: $medium) 
-                height: 50vh
-                width: 50vw
-                margin: 10vh 10vw
-                padding:  5vh 5vw
-                align-items: flex-start
-
-            input, textarea
-                background-color: #fff
-                box-shadow: inset 32px 27px 30px -24px rgba(0,0,0,0.84);
-                margin: 0 0 20px 0
-                width: 80%
-                height: 50px
-                padding-left: 20px
-                border: unset
-                @media screen and (min-width: $medium) 
-                    width: 100%
-                    margin: 0 0 50px 0
-            
-            textarea
-                height: 200px
-
-            label
-                color: #fff
-                margin: 0
-                text-transform: uppercase
-                padding: 10px 5px
-                font-weight: 800
-                font-size: 15px
-
-                @media screen and (min-width: $medium) 
-                    font-size: 20px
+        background: $color-primary-light
+        .heading-container
+            margin-bottom: 50px
+        .headline, .paragraph
+            color: $color-white
