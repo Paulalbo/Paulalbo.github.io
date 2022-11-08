@@ -300,11 +300,11 @@ body {
 
 .section-hero .hero-container {
   overflow: hidden;
-  height: 250px;
+  height: 350px;
   position: relative;
   width: 100%;
-  padding-left: 10vw;
-  padding-top: 61px;
+  padding-left: 20vw;
+  padding-top: 143px;
 }
 
 @media screen and (min-width: 900px) {
@@ -337,6 +337,7 @@ body {
 .section-hero .hero-container .headline {
   color: #ffffff;
   font-weight: 300;
+  min-height: 120px;
 }
 
 .section-hero .hero-container p {
@@ -365,7 +366,7 @@ body {
 }
 
 .section-hero .headline--2 {
-  margin-left: 200px;
+  margin-left: 50px;
   padding: 20px 25px;
   letter-spacing: 0;
   -webkit-user-select: none;
@@ -381,6 +382,7 @@ body {
 @media screen and (min-width: 900px) {
   .section-hero .headline--2 {
     font-size: 70px;
+    margin-left: 200px;
   }
 }
 
