@@ -6,15 +6,12 @@ import {verticalScroll} from './features/vertical-scroll.js';
 import {accordion} from './features/accordion.js';
 
 
-function components () {
-    addComponent("hero", "section-hero");
-    addComponent("about", "section-about");
-    addComponent("work", "section-work");
-    addComponent("contact", "section-contact");
-    addComponent("footer", "footer");
-}
-
-function features () {
+async function features () {
+    await addComponent("hero", "section-hero");
+    await addComponent("about", "section-about");
+    await addComponent("work", "section-work");
+    await addComponent("contact", "section-contact");
+    await addComponent("footer", "footer");
     navigation();
     contentEditButton();
     contentClasses();
@@ -24,4 +21,4 @@ function features () {
 
 
 
-export {features, components};
+export {features};
