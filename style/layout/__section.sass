@@ -210,8 +210,8 @@
             margin: 10vh 10vw
             background: $color-primary
             max-width: 100vw
-            border: 1px solid $color-black
             border-radius: 25px
+            box-shadow: 1px 1px 12px 0px  rgba(0,0,0,0.75) inset
             .headline
                 padding: 10vh 10vw
                 text-transform: uppercase
@@ -224,5 +224,73 @@
         background: $color-primary-light
         .heading-container
             margin-bottom: 50px
-        .headline, .paragraph
-            color: $color-white
+        
+        .contact-button
+          position: relative
+          padding: 0
+          width: 200px
+          height: 200px
+          outline: none
+          background-color: #1d2027
+          border-radius: 40px
+          box-shadow: 6px 10px 15px #1d2027
+          transition: .13s ease-in-out
+          cursor: pointer
+          & + .contact-button 
+            margin-left: 30px
+          &:active
+            box-shadow: none
+            .contact-button__content
+                box-shadow: none
+                .contact-button__text, .contact-button__icon
+                    transform: translate3d(0px, 0px, 0px)
+              
+          &__content
+            position: relative
+            display: grid
+            padding: 20px
+            width: 100%
+            height: 100%
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            box-shadow: inset -4px -4px 0px #87878775, -4px -4px 0px #1d2027
+            border-radius: 40px
+            transition: .13s ease-in-out 
+            z-index: 1
+          
+          &__icon
+            position: relative
+            display: flex
+            transform: translate3d(0px, -4px, 0px)
+            grid-column: 4
+            align-self: start
+            justify-self: end
+            width: 50px
+            height: 50px
+            transition: .13s ease-in-out 
+            .fa:before
+                font-size: 25px
+                color: $color-white
+            
+          &__container 
+            display: flex
+            justify-content: space-between
+            margin-top: 50px
+          &__text
+            position: relative
+            transform: translate3d(0px, -4px, 0px)
+            margin: 0
+            align-self: end
+            grid-column: 1/5
+            grid-row: 2
+            text-align: center
+            font-size: 32px
+            background-color: #fff
+            color: transparent
+            text-shadow: 2px 2px 3px rgba(255,255,255,0.5)
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            background-clip: text
+            transition: .13s ease-in-out 
+          
+        

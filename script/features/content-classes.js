@@ -41,7 +41,7 @@ orderedListContainers.forEach((orderedListContainer) => {
 let listElements = document.querySelectorAll(".main li");
 
 listElements.forEach((listElement) => {
-    listElement.classList.add("list--element");
+    listElement.classList.add("list__element");
 });
 
     console.log("content classes imported");
