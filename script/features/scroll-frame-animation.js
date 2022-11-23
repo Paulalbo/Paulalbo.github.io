@@ -5,7 +5,7 @@ function scrollFrameAnimation () {
   canvas.height = window.innerHeight;
   
   const context = canvas.getContext("2d");
-  const frameCount = 80;
+  const frameCount = 90;
   
   const getZeroes = (index) => {
     if (index < 10) {
