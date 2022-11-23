@@ -52,75 +52,8 @@
     justify-content: center
     align-items: center
     flex-direction: column
-    &-hero 
-        flex-direction: column
-        align-items: center
-        position: relative
-        color: white
-        .hero-container
-            overflow: hidden
-            height: 350px
-            position: relative
-            width: 100%
-            padding-left: 20vw
-            padding-top: 143px
-            @media screen and (min-width: $medium) 
-                padding-top: 114px
-                height: 350px
-            &::before, &::after
-                content: ''
-                position: absolute
-                width: 100%
-                height: 40%
-                z-index: 5
-            &::before
-                top: 0
-                background: linear-gradient(180deg, rgba(29,32,39,1) 0%, rgba(29,32,39,0) 100%)
-
-            &::after
-                bottom: 0
-                background: linear-gradient(180deg, rgba(29,32,39,0) 0%, rgba(29,32,39,1) 100%)
-
-                
-            .headline 
-                color: $color-white
-                font-weight: $weight-light
-                min-height: 90px
-            p
-                color: $color-white
-                top: 50%
-                text-transform: uppercase
-                transform: translate(0, -50%)
-                position: absolute
-                font-size: 20px
-                font-weight: $weight-light
-                width: 100%
-                @media screen and (min-width: $medium) 
-                    font-size: 70px
-
-            
-        .headline
-            animation: scroll-mobil 15s linear infinite
-            animation-delay: 2s
-            @media screen and (min-width: $medium) 
-                animation: scroll-desktop 15s linear infinite
-            &--2
-                margin-left: 50px
-                padding: 20px 25px
-                letter-spacing: 0
-                user-select: none
-                font-weight: $weight-bold
-                text-transform: uppercase
-                text-align: left
-                font-size: 20px
-
-                @media screen and (min-width: $medium) 
-                    font-size: 70px
-                    margin-left: 200px
-                
-
-                span
-                    font-weight: $weight-light
+    &--hero 
+        height: auto
 
     &--fixed 
         position: fixed
@@ -198,7 +131,7 @@
 
     &-work 
         background: $color-primary-light
-        box-shadow: inset 24px 58px 40px -53px rgba(0,0,0,0.84)
+        //box-shadow: inset 24px 58px 40px -53px rgba(0,0,0,0.84)
         padding-top: 50px
         height: 100%
         &__tech 
