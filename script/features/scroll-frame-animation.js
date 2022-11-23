@@ -53,8 +53,8 @@ function scrollFrameAnimation () {
       opacity: 1,
       scrollTrigger: {
         scrub: 1,
-        start: "50%",
-        end: "60%",
+        start: "10%",
+        end: "20%",
       },
       onComplete: () => {
         gsap.to(".ball-text", { opacity: 0 });

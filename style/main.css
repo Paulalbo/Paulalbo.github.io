@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  caret-color: #1D2027;
+  caret-color: #081110;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 .main {
-  background: #1D2027;
+  background: #081110;
   width: 100vw;
   overflow-x: hidden;
   right: 0;
@@ -34,20 +34,6 @@ body {
   opacity: 0.8;
 }
 
-.heading-container {
-  padding: 25px 20px;
-  background-color: #081110;
-  -webkit-box-shadow: 25px 20px 81px -18px rgba(0, 0, 0, 0.75);
-          box-shadow: 25px 20px 81px -18px rgba(0, 0, 0, 0.75);
-  border-radius: 15px;
-}
-
-@media screen and (min-width: 900px) {
-  .heading-container {
-    padding: 25px 50px;
-  }
-}
-
 .heading-container .headline {
   font-size: 30px;
   color: #ffffff;
@@ -60,11 +46,7 @@ body {
 }
 
 .heading-container--floating {
-  background-color: #1D2027;
-  -webkit-box-shadow: 25px 20px 81px -18px black;
-          box-shadow: 25px 20px 81px -18px black;
   margin: 0 25px;
-  border-radius: 25px;
 }
 
 .heading-container--floating .headline--2 {
@@ -76,7 +58,7 @@ body {
 }
 
 .list__element {
-  color: #ffffff;
+  color: #000000;
 }
 
 canvas {
@@ -507,7 +489,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #081110;
+  background-color: #ffffff;
   border-radius: 30px;
   -webkit-box-shadow: 25px 20px 81px -18px black;
           box-shadow: 25px 20px 81px -18px black;
@@ -520,7 +502,7 @@ h1 {
   height: 5px;
   left: -75px;
   border-radius: 50px;
-  background-color: #081110;
+  background-color: #132b28;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -536,7 +518,7 @@ h1 {
 .section-about__box .headline {
   text-transform: uppercase;
   margin: 10px 0 5px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .section-about__box .headline--3 {
@@ -564,7 +546,7 @@ h1 {
 
 .section-work__projects {
   margin: 10vh 10vw;
-  background: #1D2027;
+  background: #132b28;
   max-width: 100vw;
   border-radius: 25px;
   -webkit-box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.75) inset;
