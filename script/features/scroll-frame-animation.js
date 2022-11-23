@@ -43,24 +43,7 @@ function scrollFrameAnimation () {
     },
     onUpdate: render,
   });
-  
-  gsap.fromTo(
-    ".ball-text",
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      scrollTrigger: {
-        scrub: 1,
-        start: "10%",
-        end: "20%",
-      },
-      onComplete: () => {
-        gsap.to(".ball-text", { opacity: 0 });
-      },
-    }
-  );
+
   
   images[0].onload = render;
   
