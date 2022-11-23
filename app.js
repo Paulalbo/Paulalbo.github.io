@@ -3,7 +3,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const context = canvas.getContext("2d");
-const frameCount = 110;
+const frameCount = 80;
 
 const getZeroes = (index) => {
   if (index < 10) {
