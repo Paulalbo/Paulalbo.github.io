@@ -18,10 +18,10 @@ function scrollFrameAnimation () {
   };
   
   const CurrentFrame = (index) => {
-    if (canvas.width > 1000) {
+    if (canvas.width > 1250) {
       return `./images/${getZeroes(index)}${index}.jpg`;
     }
-    if (canvas.width <= 1000) {
+    if (canvas.width <= 1250) {
       return `./images/mobile-${getZeroes(index)}${index}.jpg`;
     }
   };
