@@ -18,7 +18,12 @@ function scrollFrameAnimation () {
   };
   
   const CurrentFrame = (index) => {
-    return `./images/${getZeroes(index)}${index}.jpg`;
+    if (canvas.width > 1000) {
+      return `./images/${getZeroes(index)}${index}.jpg`;
+    }
+    if (canvas.width <= 1000) {
+      return `./images/mobile-${getZeroes(index)}${index}.jpg`;
+    }
   };
   
   
@@ -28,7 +33,6 @@ function scrollFrameAnimation () {
   for (let i = 0; i < frameCount; i++) {
     const img = new Image();
     img.src = CurrentFrame(i);
-    console.log(CurrentFrame(i));
     images.push(img);
   }
   

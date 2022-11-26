@@ -87,28 +87,8 @@ h1 {
   color: #fff;
 }
 
-.ball-text {
-  position: fixed;
-  z-index: 2;
-  color: white;
-  font-size: 5rem;
-  right: 20%;
-  bottom: 40%;
-  -webkit-transform: translate(-20%, -40%);
-          transform: translate(-20%, -40%);
-}
-
-@media screen and (max-width: 1024px) {
-  .ball-text {
-    font-size: 2rem;
-    right: 50%;
-    bottom: 25%;
-    -webkit-transform: translate(50%, 50%);
-            transform: translate(50%, 50%);
-  }
-  h1 {
-    font-size: 2rem;
-  }
+h1 h1 {
+  font-size: 2rem;
 }
 
 .navigation {
@@ -490,7 +470,6 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
-  border-radius: 30px;
   -webkit-box-shadow: 25px 20px 81px -18px black;
           box-shadow: 25px 20px 81px -18px black;
 }
