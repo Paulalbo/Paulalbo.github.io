@@ -5,7 +5,7 @@ function scrollFrameAnimation () {
   canvas.height = window.innerHeight;
   
   const context = canvas.getContext("2d");
-  const frameCount = 90;
+  const frameCount = 16;
   
   const getZeroes = (index) => {
     if (index < 10) {
@@ -39,7 +39,7 @@ function scrollFrameAnimation () {
     scrollTrigger: {
       scrub: 0.5,
       pin: "canvas",
-      end: "400%",
+      end: "200%",
     },
     onUpdate: render,
   });
