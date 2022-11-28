@@ -1,53 +1,5 @@
-.spline
-    position: absolute
-    width: 50vw
-    height: 50vh
-
-    
-@keyframes scroll-desktop
-    0%
-        transform: translateY(0px)
-    3%
-	    transform: translateY(calc(-120px))
-    25%
-	    transform: translateY(calc(-120px))
-    28%
-	    transform: translateY(calc(-120px * 2))
-    50%
-	    transform: translateY(calc(-120px * 2))
-    53%
-	    transform: translateY(calc(-120px * 3))
-    75%
-	    transform: translateY(calc(-120px * 3))
-    78%
-	    transform: translateY(calc(-120px * 4))
-    100%
-	    transform: translateY(calc(-120px * 4))
-
-@keyframes scroll-mobil
-    0%
-        transform: translateY(0px)
-    3%
-	    transform: translateY(calc(-90px))
-    25%
-	    transform: translateY(calc(-90px))
-    28%
-	    transform: translateY(calc(-90px * 2))
-    50%
-	    transform: translateY(calc(-90px * 2))
-    53%
-	    transform: translateY(calc(-90px * 3))
-    75%
-	    transform: translateY(calc(-90px * 3))
-    78%
-	    transform: translateY(calc(-90px * 4))
-    100%
-	    transform: translateY(calc(-90px * 4))
-
-
-
 .section
-    height: 100vh
+    min-height: 100vh
     display: flex
     justify-content: center
     align-items: center
@@ -64,7 +16,7 @@
         &__item
             display: flex
             justify-content: flex-start
-            align-items: center
+            align-items: flex-start
             flex-direction: column
             border-bottom: 1px solid $color-white-20p
             padding: 75px 25px
@@ -72,6 +24,7 @@
             max-width: 900px
             @media screen and (min-width: $medium) 
                 flex-direction: row
+                 align-items: center
             &:last-of-type
                 border-bottom: none
             .headline 
