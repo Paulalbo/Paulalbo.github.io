@@ -7,7 +7,8 @@ import {accordion} from './features/accordion.js';
 
 async function features () {
     await addComponent("hero", "main");
-    await addComponent("about", "section-about");
+    await addComponent("info", "section-info");
+    await addComponent("experience", "section-about");
     await addComponent("work", "section-work");
     await addComponent("contact", "section-contact");
     await addComponent("footer", "footer");
