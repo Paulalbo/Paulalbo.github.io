@@ -28,7 +28,7 @@ function scrollFrameAnimation () {
   
   
   const images = [];
-  let ball = { frame: 0 };
+  let imgFrame = { frame: 0 };
   
   for (let i = 0; i < frameCount; i++) {
     const img = new Image();
@@ -36,7 +36,7 @@ function scrollFrameAnimation () {
     images.push(img);
   }
   
-  gsap.to(ball, {
+  gsap.to(imgFrame, {
     frame: frameCount - 1,
     snap: "frame",
     ease: "none",
@@ -56,7 +56,7 @@ function scrollFrameAnimation () {
     context.canvas.height = images[0].height;
   
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(images[ball.frame], 0, 0);
+    context.drawImage(images[imgFrame.frame], 0, 0);
   }
   
     

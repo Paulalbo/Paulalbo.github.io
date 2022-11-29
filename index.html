@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> 
+      console.log("loading");
+      window.addEventListener("load", () => { 
+        document.getElementById("loading").style.display = "none";
+        console.log("loaded");
+      }); 
+      </script> 
     <link rel="stylesheet" href="./style/main.css">
     <script src="./script/script.js" type="module" defer></script>
     <title>Document</title>
@@ -21,6 +28,7 @@
     <script src="https://kit.fontawesome.com/45dc29d00c.js" crossorigin="anonymous"></script>
 </head>
 <body class="body">
+<div id="loading"></div>
 <article class="main">
 <section class="section section-info"></section>
 <section class="section section-about"></section>
