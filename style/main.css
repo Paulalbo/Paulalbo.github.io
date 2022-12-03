@@ -226,7 +226,7 @@ h1 h1 {
 }
 
 .acc__trigger:hover {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.815);
   cursor: pointer;
 }
 
@@ -236,7 +236,7 @@ h1 h1 {
 
 .acc__content {
   height: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.815);
   overflow: hidden;
 }
 
@@ -286,7 +286,7 @@ h1 h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.815);
   padding: 75px 25px;
   width: 100%;
   max-width: 900px;
@@ -508,6 +508,16 @@ h1 h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.section-work__projects a {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.section-work__projects a:hover {
+  color: rgba(255, 255, 255, 0.815);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.815);
 }
 
 .section-work__projects .headline {
