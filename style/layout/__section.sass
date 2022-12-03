@@ -176,14 +176,22 @@
             .headline
                 text-transform: uppercase
                 text-align: center
-                font-size: 15px
                 color: $color-white
-                @media screen and (min-width: $medium) 
-                    font-size: 30px
+                max-width: 900px
+                &--3
+                    font-size: 15px
+                    @media screen and (min-width: $medium) 
+                        font-size: 25px
+                &--4
+                    font-size: 12px
+                    padding-top: 75px
+                    @media screen and (min-width: $medium) 
+                        font-size: 20px
             .project-container
                 display: grid
                 grid-template-columns: 100%
                 width: 100%
+                margin-top: 50px
                 max-width: 900px
                 @media screen and (min-width: $medium) 
                     grid-template-columns: 33% 33% 33%

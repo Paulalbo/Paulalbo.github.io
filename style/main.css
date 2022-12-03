@@ -555,13 +555,28 @@ h1 h1 {
 .section-work__projects .headline {
   text-transform: uppercase;
   text-align: center;
-  font-size: 15px;
   color: #ffffff;
+  max-width: 900px;
+}
+
+.section-work__projects .headline--3 {
+  font-size: 15px;
 }
 
 @media screen and (min-width: 900px) {
-  .section-work__projects .headline {
-    font-size: 30px;
+  .section-work__projects .headline--3 {
+    font-size: 25px;
+  }
+}
+
+.section-work__projects .headline--4 {
+  font-size: 12px;
+  padding-top: 75px;
+}
+
+@media screen and (min-width: 900px) {
+  .section-work__projects .headline--4 {
+    font-size: 20px;
   }
 }
 
@@ -571,6 +586,7 @@ h1 h1 {
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   width: 100%;
+  margin-top: 50px;
   max-width: 900px;
 }
 
