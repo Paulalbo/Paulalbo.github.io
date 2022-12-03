@@ -9,10 +9,8 @@
     <meta property="og:description" content="I'm Pauli, a passionate web developer with enthusiasm for design and new trends. I'm focused on frontend and wordpress development.">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <script> 
-      console.log("loading");
-      window.addEventListener("load", () => { 
-        document.getElementById("loading").style.display = "none";
-        console.log("loaded");
+      Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+        console.log('images finished loading');
       }); 
       </script> 
     <link rel="stylesheet" href="./style/main.css">
@@ -33,7 +31,6 @@
     <script src="https://kit.fontawesome.com/45dc29d00c.js" crossorigin="anonymous"></script>
 </head>
 <body class="body">
-<div id="loading"></div>
 <article class="main">
 <section class="section section-info"></section>
 <section class="section section-about"></section>
