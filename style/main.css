@@ -592,15 +592,40 @@ h1 h1 {
 }
 
 .section-work__projects .project-container__project {
-  padding: 5px 0 25px;
+  padding: 25px 25px 25px 50px;
   margin: 20px 10px;
   font-size: 17px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.815);
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  min-height: 250px;
 }
 
 .section-work__projects .project-container__headline {
   font-weight: 700;
   text-transform: uppercase;
+  position: absolute;
+  left: 25px;
+  bottom: 40%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  width: 100%;
+  text-align: center;
+}
+
+.section-work__projects .project-container .paragraph {
+  color: #090B0A;
+}
+
+.section-work__projects .project-container .paragraph a {
+  color: #090B0A;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.section-work__projects .project-container .paragraph a .fa-link {
+  padding-right: 5px;
 }
 
 .section-contact {

@@ -194,13 +194,31 @@
                 @media screen and (min-width: $medium) 
                     grid-template-columns: 33% 33% 33%
                 &__project 
-                    padding: 5px 0 25px
+                    padding: 25px 25px 25px 50px
                     margin: 20px 10px
                     font-size: 17px
                     border-bottom: 1px solid $color-white-20p
+                    background-color: $color-white
+                    border-radius: 5px
+                    position: relative
+                    min-height: 250px
                 &__headline 
                     font-weight: $weight-bold
                     text-transform: uppercase
+                    position: absolute
+                    left: 25px
+                    bottom: 40%
+                    transform:  translateX(-50%) translateY(-50%) rotate(-90deg)
+                    width: 100%
+                    text-align: center
+                .paragraph
+                    color: $color-primary
+                    a
+                        color: $color-primary
+                        margin-left: 0
+                        padding-left: 0
+                        .fa-link
+                            padding-right: 5px
     &-contact 
         background: $color-primary
         .heading-container
