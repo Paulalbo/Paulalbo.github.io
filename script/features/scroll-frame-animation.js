@@ -43,7 +43,7 @@ function scrollFrameAnimation () {
     scrollTrigger: {
       scrub: 0.5,
       pin: "canvas",
-      end: "200%",
+      end: "100%",
     },
     onUpdate: render,
   });
