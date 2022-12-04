@@ -317,10 +317,6 @@ h1 h1 {
   font-weight: 400;
 }
 
-.section-info__item .paragraph {
-  text-transform: uppercase;
-}
-
 .section-about {
   overflow: hidden;
   display: -webkit-box;
@@ -479,12 +475,6 @@ h1 h1 {
   border-bottom: none;
 }
 
-.section-about__box .paragraph b {
-  background: #000000;
-  color: #ffffff;
-  padding: 0 5px;
-}
-
 .section-about__box .headline {
   text-transform: uppercase;
   margin: 10px 0 5px;
@@ -496,7 +486,6 @@ h1 h1 {
 }
 
 .section-work {
-  background: #090B0A;
   padding-top: 50px;
   height: 100%;
 }
@@ -542,21 +531,25 @@ h1 h1 {
 
 .section-work__projects a {
   color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border: 2px solid #ffffff;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 5px;
 }
 
 .section-work__projects a:hover {
-  color: rgba(255, 255, 255, 0.815);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.815);
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .section-work__projects .headline {
-  text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   max-width: 900px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .section-work__projects .headline--3 {
