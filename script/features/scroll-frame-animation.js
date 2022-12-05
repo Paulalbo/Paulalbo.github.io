@@ -19,10 +19,10 @@ function scrollFrameAnimation () {
   
   const CurrentFrame = (index) => {
     if (canvas.width > 1250) {
-      return `./images/${getZeroes(index)}${index}.jpg`;
+      return `.assets/img/hero-animation/${getZeroes(index)}${index}.jpg`;
     }
     if (canvas.width <= 1250) {
-      return `./images/mobile-${getZeroes(index)}${index}.jpg`;
+      return `./hero-animation/mobile-${getZeroes(index)}${index}.jpg`;
     }
   };
   
