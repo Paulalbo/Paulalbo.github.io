@@ -1,0 +1,52 @@
+.headline 
+    color: $color-white
+    line-height: 0.85;
+    perspective: 500px;
+    &--1 
+    &--2
+        text-align: center
+        font-size: 30px
+        margin: 20px 0 50px
+        @media screen and (min-width: $medium) 
+            font-size: 50px
+    
+    &--3
+    &--4
+    &--5
+    &--6
+    &--7
+    &--animate 
+        color: $color-primary
+        &::after
+            opacity: 1
+            content: ""
+            position: absolute
+            height: 100%
+            background: $color-white
+    &--animated
+        position: relative
+        opacity: 1
+        transition: 1s ease-out
+        transition-delay: 1s
+        color: $color-white
+        &::after
+            animation: boxreveal 2s
+
+.paragraph
+  color: $color-white
+  font-size: 15px
+  letter-spacing: 0.05em
+  word-spacing: 0.2em
+  line-height: 1.5
+  max-width: 900px
+  strong
+    font-weight: 700
+    background-color: $color-white
+    color: $color-black
+    padding: 0 5px
+
+.list 
+  &--ordered
+  &--unordered
+  &__element
+    color: $color-white

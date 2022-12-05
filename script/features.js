@@ -3,6 +3,7 @@ import {contentClasses} from './features/content-classes.js';
 import {verticalScroll} from './features/vertical-scroll.js';
 import {scrollFrameAnimation} from './features/scroll-frame-animation.js';
 import {accordion} from './features/accordion.js';
+import {observeAdd} from './features/observer.js';
 
 
 async function features () {
@@ -12,10 +13,11 @@ async function features () {
     await addComponent("work", "section-work");
     await addComponent("contact", "section-contact");
     await addComponent("footer", "footer");
-    contentClasses();
     await scrollFrameAnimation();
+    contentClasses();
     verticalScroll();
     accordion();
+    observeAdd(".headline--animate", "headline--animated");
 }
 
 
