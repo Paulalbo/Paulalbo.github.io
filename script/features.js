@@ -17,6 +17,7 @@ async function features () {
     contentClasses();
     verticalScroll();
     accordion();
+    observeAdd(".section-info", "section-info--active");
     observeAdd(".headline--animate", "headline--animated");
 }
 

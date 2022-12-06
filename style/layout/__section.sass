@@ -14,6 +14,16 @@
         left: 0
 
     &-info 
+        .hero-info
+            position: fixed
+            top: 90vh
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            &__logo 
+                width: 50px
+                height: 50px
         &__item
             display: flex
             justify-content: flex-start
@@ -32,6 +42,10 @@
                 font-size: 50px
                 min-width: 250px
                 font-weight: 400
+        &--active
+            .hero-info
+                position: absolute
+                top: -10vh
 
     &-about
         overflow: hidden
@@ -137,8 +151,8 @@
 
     &-work
         background: $color-primary
-        padding-top: 50px
         height: 100%
+        padding: 50px 10vw
         &__tech 
             display: flex
             justify-content: center
@@ -164,8 +178,10 @@
                 border: 2px solid $color-white
                 transition: .5s ease-in-out
                 text-decoration: none
-                padding: 5px
+                padding: 1px 5px
                 margin: 0 5px
+                @media screen and (min-width: $medium)
+                    padding: 5px 
                 &:hover 
                     background-color: $color-white
                     color: $color-black
@@ -220,8 +236,7 @@
                             padding-right: 5px
     &-contact 
         background: $color-primary
-        .heading-container
-            margin-bottom: 50px
+        padding: 50px 10vw
         .headline 
             text-align: center
             padding: 0 25px
